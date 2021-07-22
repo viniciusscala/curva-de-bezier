@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Curvas de bezier</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <section id="canvas_bezier_container">
+      <canvas id="canvas_bezier" class="card"></canvas>
+  </section>
+  <aside class="card">
+    <h1>Curvas de <br/> <b>Bezier</b></h1>
+    <div class="icons">
+      <button onclick="novaCurva()" class="card" title="Nova curva"></button>
+      <button onclick="deletarCurva()" class="card" title="Deletar curva"></button>
+      <button onclick="moverPonto()" id="moverPontoButton" class="card" title="Mover Ponto"></button>
+      <button onclick="curvaAnterior()" class="card" title="Curva Anterior"></button>
+      <button onclick="proximaCurva()" class="card" title="Próxima Curva"></button>
+    </div>
+    <div class="avaluation">
+      <input type="number" min="0" value="200" class="negative-card" id="avaliacoesCurva">
+      <button onclick="mudarAvaliacao()" class="card"></button>
+    </div>
+    <button onclick="alternarPontosControle()" id="pontosControleButton" class="card active">Pontos de controle</button>
+    <button onclick="alternarPoligonaisControle()" id="poligonaisControleButton" class="card active">Poligonais de controle</button>
+    <button onclick="alternarExibicaoCurvas()" id="exibicaoCurvasButton" class="card active">Curvas</button>
+  </aside>
+
+  <!-- <div>
+	  <canvas id="myCanvas" width="1000" height="550"></canvas>
+  </div>
+  <div> 
+    <input class="button" type="button" id="novaCurva" onclick="novaCurva()" value="Nova Curva"></button>
+    <input class="button" type="button" id="deletarCurva" onclick="deletarCurva()" value="Deletar Curva"></button>
+    <input class="button" type="button" id="curvaAnterior" onclick="curvaAnterior()" value="Curva Anterior"></button>
+    <input class="button" type="button" id="proximaCurva" onclick="proximaCurva()" value="Próxima Curva"></button>
+    <input class="button" type="button" id="moverPonto" onclick="moverPonto()" value="Mover Ponto"></button>
+  </div>
+  <div>
+    <input class="numberbox" type="number" id="avaliacoesCurva" min="0" value="200">
+    <input class="button" type="button" id="mudarAvaliacao" onclick="mudarAvaliacao()" value="Mudar Avaliação"></button>
+  </div>
+  <div class="checkboxes">
+    <input type="checkbox" id="pontosControle" onclick="alternarPontosControle()" checked> Pontos de Controle
+    <input type="checkbox" id="poligonaisControle" onclick="alternarPoligonaisControle()" checked> Poligonais de controle
+    <input type="checkbox" id="exibirCurva" onclick="alternarExibicaoCurvas()" checked> Curvas
+  </div> -->
+	<script src="script.js"></script>
+</body>
+
+</html>
+
